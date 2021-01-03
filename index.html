@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="./script.js" defer></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="heading-container">
+			<h1>contact us</h1>
+		</div>
+		<form id="form-container" method="POST">
+			<div class="text-input-container">
+				<label for="name">Name</label>
+				<input
+					type="text"
+					name="name"
+					id="name"
+					placeholder="Enter your name here..."
+					required
+				/>
+			</div>
+			<div class="text-input-container">
+				<label for="email">Email</label>
+				<input
+					type="text"
+					name="email"
+					id="email"
+					placeholder="Enter your email here..."
+					required
+				/>
+			</div>
+			<div class="text-input-container">
+				<label for="message">Message</label>
+				<textarea
+					name="message"
+					id="message"
+					placeholder="Enter your message here..."
+				></textarea>
+			</div>
+			<div>
+				<button type="submit">submit</button>
+			</div>
+		</form>
+		<div id="after-submission">
+			<div id="message-container">
+				<img src="./images/cross.svg" alt="close" id="close" />
+				<img src="./images/success.svg" alt="Success" id="success" />
+				<p>
+					Your message has been delivered. We will try to respond you
+					as soon as possible.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

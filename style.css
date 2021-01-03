@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(49, 78, 44, 0.34), rgba(49, 78, 44, 0.34)), url("./images/rowan-heuvel-Jc27VxW694I-unsplash.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+body .heading-container {
+  padding: 1em;
+}
+
+body .heading-container h1 {
+  font-size: 3em;
+}
+
+body form {
+  width: 40%;
+  border-radius: 0.375em;
+  background: rgba(49, 78, 44, 0.8);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+body form .text-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+body form .text-input-container label {
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 0.25em 0;
+}
+
+body form .text-input-container input[type="text"] {
+  padding: 0.6em;
+  font-size: 1em;
+  outline: none;
+  border: none;
+}
+
+body form .text-input-container input[type="text"]:focus {
+  border-bottom: #3cbb26 solid 4px;
+}
+
+body form .text-input-container textarea {
+  height: 130px;
+  padding: 0.6em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  outline: none;
+}
+
+body form .text-input-container textarea:focus {
+  border-bottom: #3cbb26 solid 4px;
+}
+
+body form button[type="submit"] {
+  height: 40px;
+  width: 120px;
+  padding: 0.5em 0;
+  border: none;
+  margin-top: 1em;
+  background: #3cbb26;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  body form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body form {
+    width: 90%;
+  }
+}
+
+body #after-submission {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(49, 78, 44, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  left: -1000%;
+}
+
+body #after-submission #message-container {
+  width: 25%;
+  padding: 1em;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.3em;
+}
+
+body #after-submission #message-container #close {
+  width: 25px;
+  height: 25px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+body #after-submission #message-container #success {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1em;
+}
+
+body #after-submission #message-container p {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+  body #after-submission #message-container {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body #after-submission #message-container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body #after-submission #message-container {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
